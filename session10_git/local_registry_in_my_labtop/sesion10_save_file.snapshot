@@ -16,15 +16,15 @@
         "flowFileConcurrency" : "UNBOUNDED",
         "flowFileOutboundPolicy" : "STREAM_WHEN_AVAILABLE",
         "funnels" : [ ],
-        "identifier" : "3ec3ded9-eefa-35b4-8ba8-347d50c51670",
+        "identifier" : "c5f4f10f-0116-3208-b4bf-95da2f28b52d",
         "inputPorts" : [ ],
-        "instanceIdentifier" : "748edbf8-018e-1000-18dd-46b8074df8e6",
+        "instanceIdentifier" : "7adf545f-018e-1000-5d61-61f641f5f912",
         "labels" : [ ],
         "name" : "session10_part2",
         "outputPorts" : [ ],
         "position" : {
-          "x" : -104.0,
-          "y" : 360.0
+          "x" : 1040.0,
+          "y" : 520.0
         },
         "processGroups" : [ ],
         "processors" : [ {
@@ -40,98 +40,15 @@
           "componentType" : "PROCESSOR",
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
-          "groupIdentifier" : "3ec3ded9-eefa-35b4-8ba8-347d50c51670",
-          "identifier" : "167e5d08-1f10-36d6-b99a-123457603b6b",
-          "instanceIdentifier" : "7a05dbfb-018e-1000-221a-83441399661c",
-          "maxBackoffPeriod" : "10 mins",
-          "name" : "AttributesToJSON",
-          "penaltyDuration" : "30 sec",
-          "position" : {
-            "x" : -232.0,
-            "y" : 400.0
-          },
-          "properties" : {
-            "Destination" : "flowfile-attribute",
-            "Null Value" : "false",
-            "Pretty Print" : "false",
-            "Include Core Attributes" : "true",
-            "JSON Handling Strategy" : "ESCAPED"
-          },
-          "propertyDescriptors" : {
-            "attributes-to-json-regex" : {
-              "displayName" : "Attributes Regular Expression",
-              "identifiesControllerService" : false,
-              "name" : "attributes-to-json-regex",
-              "sensitive" : false
-            },
-            "Destination" : {
-              "displayName" : "Destination",
-              "identifiesControllerService" : false,
-              "name" : "Destination",
-              "sensitive" : false
-            },
-            "Null Value" : {
-              "displayName" : "Null Value",
-              "identifiesControllerService" : false,
-              "name" : "Null Value",
-              "sensitive" : false
-            },
-            "Attributes List" : {
-              "displayName" : "Attributes List",
-              "identifiesControllerService" : false,
-              "name" : "Attributes List",
-              "sensitive" : false
-            },
-            "Pretty Print" : {
-              "displayName" : "Pretty Print",
-              "identifiesControllerService" : false,
-              "name" : "Pretty Print",
-              "sensitive" : false
-            },
-            "Include Core Attributes" : {
-              "displayName" : "Include Core Attributes",
-              "identifiesControllerService" : false,
-              "name" : "Include Core Attributes",
-              "sensitive" : false
-            },
-            "JSON Handling Strategy" : {
-              "displayName" : "JSON Handling Strategy",
-              "identifiesControllerService" : false,
-              "name" : "JSON Handling Strategy",
-              "sensitive" : false
-            }
-          },
-          "retriedRelationships" : [ ],
-          "retryCount" : 10,
-          "runDurationMillis" : 0,
-          "scheduledState" : "ENABLED",
-          "schedulingPeriod" : "0 sec",
-          "schedulingStrategy" : "TIMER_DRIVEN",
-          "style" : { },
-          "type" : "org.apache.nifi.processors.standard.AttributesToJSON",
-          "yieldDuration" : "1 sec"
-        }, {
-          "autoTerminatedRelationships" : [ ],
-          "backoffMechanism" : "PENALIZE_FLOWFILE",
-          "bulletinLevel" : "WARN",
-          "bundle" : {
-            "artifact" : "nifi-standard-nar",
-            "group" : "org.apache.nifi",
-            "version" : "1.25.0"
-          },
-          "comments" : "",
-          "componentType" : "PROCESSOR",
-          "concurrentlySchedulableTaskCount" : 1,
-          "executionNode" : "ALL",
-          "groupIdentifier" : "3ec3ded9-eefa-35b4-8ba8-347d50c51670",
-          "identifier" : "e9a7d4ae-50a1-3f93-b5c9-355f0e538a03",
-          "instanceIdentifier" : "7a00d317-018e-1000-444f-4e8cd0d52836",
+          "groupIdentifier" : "c5f4f10f-0116-3208-b4bf-95da2f28b52d",
+          "identifier" : "5baa632c-1708-36d4-be7d-9569c46bf953",
+          "instanceIdentifier" : "7b3539f1-018e-1000-da2e-ce03223f66ab",
           "maxBackoffPeriod" : "10 mins",
           "name" : "AttributesToCSV",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : -232.0,
-            "y" : 152.0
+            "x" : 1128.0,
+            "y" : 368.0
           },
           "properties" : {
             "null-value" : "false",
@@ -185,6 +102,78 @@
           "schedulingStrategy" : "TIMER_DRIVEN",
           "style" : { },
           "type" : "org.apache.nifi.processors.standard.AttributesToCSV",
+          "yieldDuration" : "1 sec"
+        }, {
+          "autoTerminatedRelationships" : [ ],
+          "backoffMechanism" : "PENALIZE_FLOWFILE",
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-cybersecurity-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.25.0"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "c5f4f10f-0116-3208-b4bf-95da2f28b52d",
+          "identifier" : "00160781-fd9e-3ef0-bec0-0dbe11589a17",
+          "instanceIdentifier" : "7b392c7c-018e-1000-9745-4907f1288817",
+          "maxBackoffPeriod" : "10 mins",
+          "name" : "CompareFuzzyHash",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : 1664.0,
+            "y" : 368.0
+          },
+          "properties" : {
+            "ATTRIBUTE_NAME" : "fuzzyhash.value",
+            "MATCHING_MODE" : "single"
+          },
+          "propertyDescriptors" : {
+            "ATTRIBUTE_NAME" : {
+              "displayName" : "Hash Attribute Name",
+              "identifiesControllerService" : false,
+              "name" : "ATTRIBUTE_NAME",
+              "sensitive" : false
+            },
+            "HASH_LIST_FILE" : {
+              "displayName" : "Hash List Source File",
+              "identifiesControllerService" : false,
+              "name" : "HASH_LIST_FILE",
+              "resourceDefinition" : {
+                "cardinality" : "SINGLE",
+                "resourceTypes" : [ "FILE" ]
+              },
+              "sensitive" : false
+            },
+            "HASH_ALGORITHM" : {
+              "displayName" : "Hashing Algorithm",
+              "identifiesControllerService" : false,
+              "name" : "HASH_ALGORITHM",
+              "sensitive" : false
+            },
+            "MATCH_THRESHOLD" : {
+              "displayName" : "Match Threshold",
+              "identifiesControllerService" : false,
+              "name" : "MATCH_THRESHOLD",
+              "sensitive" : false
+            },
+            "MATCHING_MODE" : {
+              "displayName" : "Matching Mode",
+              "identifiesControllerService" : false,
+              "name" : "MATCHING_MODE",
+              "sensitive" : false
+            }
+          },
+          "retriedRelationships" : [ ],
+          "retryCount" : 10,
+          "runDurationMillis" : 0,
+          "scheduledState" : "ENABLED",
+          "schedulingPeriod" : "0 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.cybersecurity.CompareFuzzyHash",
           "yieldDuration" : "1 sec"
         } ],
         "remoteProcessGroups" : [ ],
